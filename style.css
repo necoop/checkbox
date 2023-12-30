@@ -14,7 +14,7 @@ body {
   font-family: Hostilbeveled;
   font-size: 68px;
   background: #c3fbf7;
-  transition: 0.5s ease;
+  transition: background 0.5s ease;
 }
 
 label {
@@ -41,7 +41,7 @@ label {
   background: linear-gradient(180deg, #5c0000 0%, rgba(250, 1, 1, 0.58) 106.49%, rgba(251, 220, 220, 0.08) 106.5%);
   border-radius: 50px;
   opacity: 0;
-  transition: 0.5s ease;
+  transition: opacity 0.5s ease;
 }
 
 #roller {
@@ -58,7 +58,7 @@ label {
   position: absolute;
   top: 7px;
   left: 7px;
-  transition: 0.5s ease;
+  transition: transform 0.5s ease;
   z-index: 10;
 }
 #roller::before {
@@ -76,7 +76,7 @@ label {
   border-radius: 50%;
   z-index: 15;
   opacity: 0;
-  transition: 0.5s ease;
+  transition: opacity 0.5s ease;
 }
 
 input {
