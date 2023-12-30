@@ -1,6 +1,14 @@
 let checkbox = document.getElementById("checkbox");
 let body = document.querySelector("body");
 
-checkbox.addEventListener("change", () => {
-  body.classList.toggle("body__dark");
-});
+function themeSetup() {
+  if (checkbox.checked) {
+    body.classList.add("body__dark");
+  } else {
+    body.classList.remove("body__dark");
+  }
+}
+
+themeSetup();
+
+checkbox.addEventListener("change", themeSetup);
